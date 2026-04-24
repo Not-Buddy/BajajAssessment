@@ -1,0 +1,183 @@
+2026-04-24T12:44:10.690304Z  INFO ThreadId(01) backend: Starting server on http://0.0.0.0:8080
+2026-04-24T12:44:10.690345Z  INFO ThreadId(01) backend: Logs are written to logs/bfhl.log.<date>
+2026-04-24T12:44:10.690714Z  INFO ThreadId(01) actix_server::builder: starting 16 workers
+2026-04-24T12:44:10.690771Z  INFO ThreadId(01) actix_server::server: Actix runtime found; starting in Actix runtime
+2026-04-24T12:44:10.690806Z  INFO ThreadId(01) actix_server::server: starting service: "actix-web-service-0.0.0.0:8080", workers: 16, listening on: 0.0.0.0:8080
+2026-04-24T12:44:17.121100Z  INFO ThreadId(03) backend::handler: POST /bfhl received total_input=16
+2026-04-24T12:44:17.122322Z  INFO ThreadId(03) backend::handler: Parsing complete valid=12 invalid=3 dupes=1
+2026-04-24T12:44:17.122358Z  WARN ThreadId(03) backend::handler: Invalid entries found entries=["hello", "1->2", "A->"]
+2026-04-24T12:44:17.122371Z  WARN ThreadId(03) backend::handler: Duplicate edges found edges=["G->H"]
+2026-04-24T12:44:17.122606Z  INFO ThreadId(03) backend::handler: Response summary trees=3 cycles=1 largest=A
+2026-04-24T12:44:17.122750Z  INFO ThreadId(03) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 463 bytes 1.899385ms
+2026-04-24T12:44:17.153114Z  INFO ThreadId(04) backend::handler: POST /bfhl received total_input=16
+2026-04-24T12:44:17.154616Z  INFO ThreadId(04) backend::handler: Parsing complete valid=12 invalid=3 dupes=1
+2026-04-24T12:44:17.154657Z  WARN ThreadId(04) backend::handler: Invalid entries found entries=["hello", "1->2", "A->"]
+2026-04-24T12:44:17.154677Z  WARN ThreadId(04) backend::handler: Duplicate edges found edges=["G->H"]
+2026-04-24T12:44:17.155031Z  INFO ThreadId(04) backend::handler: Response summary trees=3 cycles=1 largest=A
+2026-04-24T12:44:17.155258Z  INFO ThreadId(04) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 463 bytes 2.375397ms
+2026-04-24T12:44:17.179048Z  INFO ThreadId(05) backend::handler: POST /bfhl received total_input=16
+2026-04-24T12:44:17.180008Z  INFO ThreadId(05) backend::handler: Parsing complete valid=12 invalid=3 dupes=1
+2026-04-24T12:44:17.180039Z  WARN ThreadId(05) backend::handler: Invalid entries found entries=["hello", "1->2", "A->"]
+2026-04-24T12:44:17.180055Z  WARN ThreadId(05) backend::handler: Duplicate edges found edges=["G->H"]
+2026-04-24T12:44:17.180298Z  INFO ThreadId(05) backend::handler: Response summary trees=3 cycles=1 largest=A
+2026-04-24T12:44:17.180494Z  INFO ThreadId(05) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 463 bytes 1.677493ms
+2026-04-24T12:44:17.203581Z  INFO ThreadId(06) backend::handler: POST /bfhl received total_input=16
+2026-04-24T12:44:17.204744Z  INFO ThreadId(06) backend::handler: Parsing complete valid=12 invalid=3 dupes=1
+2026-04-24T12:44:17.204779Z  WARN ThreadId(06) backend::handler: Invalid entries found entries=["hello", "1->2", "A->"]
+2026-04-24T12:44:17.204798Z  WARN ThreadId(06) backend::handler: Duplicate edges found edges=["G->H"]
+2026-04-24T12:44:17.205124Z  INFO ThreadId(06) backend::handler: Response summary trees=3 cycles=1 largest=A
+2026-04-24T12:44:17.205330Z  INFO ThreadId(06) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 463 bytes 1.960828ms
+2026-04-24T12:44:17.229347Z  INFO ThreadId(07) backend::handler: POST /bfhl received total_input=16
+2026-04-24T12:44:17.230194Z  INFO ThreadId(07) backend::handler: Parsing complete valid=12 invalid=3 dupes=1
+2026-04-24T12:44:17.230223Z  WARN ThreadId(07) backend::handler: Invalid entries found entries=["hello", "1->2", "A->"]
+2026-04-24T12:44:17.230235Z  WARN ThreadId(07) backend::handler: Duplicate edges found edges=["G->H"]
+2026-04-24T12:44:17.230489Z  INFO ThreadId(07) backend::handler: Response summary trees=3 cycles=1 largest=A
+2026-04-24T12:44:17.230648Z  INFO ThreadId(07) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 463 bytes 1.491156ms
+2026-04-24T12:44:17.255831Z  INFO ThreadId(08) backend::handler: POST /bfhl received total_input=16
+2026-04-24T12:44:17.256659Z  INFO ThreadId(08) backend::handler: Parsing complete valid=12 invalid=3 dupes=1
+2026-04-24T12:44:17.256687Z  WARN ThreadId(08) backend::handler: Invalid entries found entries=["hello", "1->2", "A->"]
+2026-04-24T12:44:17.256699Z  WARN ThreadId(08) backend::handler: Duplicate edges found edges=["G->H"]
+2026-04-24T12:44:17.256915Z  INFO ThreadId(08) backend::handler: Response summary trees=3 cycles=1 largest=A
+2026-04-24T12:44:17.257052Z  INFO ThreadId(08) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 463 bytes 1.400459ms
+2026-04-24T12:44:17.282701Z  INFO ThreadId(09) backend::handler: POST /bfhl received total_input=16
+2026-04-24T12:44:17.283713Z  INFO ThreadId(09) backend::handler: Parsing complete valid=12 invalid=3 dupes=1
+2026-04-24T12:44:17.283757Z  WARN ThreadId(09) backend::handler: Invalid entries found entries=["hello", "1->2", "A->"]
+2026-04-24T12:44:17.283779Z  WARN ThreadId(09) backend::handler: Duplicate edges found edges=["G->H"]
+2026-04-24T12:44:17.284122Z  INFO ThreadId(09) backend::handler: Response summary trees=3 cycles=1 largest=A
+2026-04-24T12:44:17.284328Z  INFO ThreadId(09) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 463 bytes 1.802825ms
+2026-04-24T12:44:17.308299Z  INFO ThreadId(10) backend::handler: POST /bfhl received total_input=10
+2026-04-24T12:44:17.309464Z  INFO ThreadId(10) backend::handler: Parsing complete valid=0 invalid=10 dupes=0
+2026-04-24T12:44:17.309496Z  WARN ThreadId(10) backend::handler: Invalid entries found entries=["hello", "1->2", "AB->C", "A-B", "A->", "", "A->A", " ", "a->b", "A->BC"]
+2026-04-24T12:44:17.309513Z  INFO ThreadId(10) backend::handler: Response summary trees=0 cycles=0 largest=
+2026-04-24T12:44:17.309637Z  INFO ThreadId(10) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 287 bytes 1.710273ms
+2026-04-24T12:44:17.333130Z  INFO ThreadId(11) backend::handler: POST /bfhl received total_input=10
+2026-04-24T12:44:17.333958Z  INFO ThreadId(11) backend::handler: Parsing complete valid=0 invalid=10 dupes=0
+2026-04-24T12:44:17.333989Z  WARN ThreadId(11) backend::handler: Invalid entries found entries=["hello", "1->2", "AB->C", "A-B", "A->", "", "A->A", " ", "a->b", "A->BC"]
+2026-04-24T12:44:17.334007Z  INFO ThreadId(11) backend::handler: Response summary trees=0 cycles=0 largest=
+2026-04-24T12:44:17.334129Z  INFO ThreadId(11) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 287 bytes 1.186381ms
+2026-04-24T12:44:17.358470Z  INFO ThreadId(12) backend::handler: POST /bfhl received total_input=10
+2026-04-24T12:44:17.359256Z  INFO ThreadId(12) backend::handler: Parsing complete valid=0 invalid=10 dupes=0
+2026-04-24T12:44:17.359284Z  WARN ThreadId(12) backend::handler: Invalid entries found entries=["hello", "1->2", "AB->C", "A-B", "A->", "", "A->A", " ", "a->b", "A->BC"]
+2026-04-24T12:44:17.359301Z  INFO ThreadId(12) backend::handler: Response summary trees=0 cycles=0 largest=
+2026-04-24T12:44:17.359418Z  INFO ThreadId(12) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 287 bytes 1.137571ms
+2026-04-24T12:44:17.382858Z  INFO ThreadId(13) backend::handler: POST /bfhl received total_input=1
+2026-04-24T12:44:17.384343Z  INFO ThreadId(13) backend::handler: Parsing complete valid=0 invalid=1 dupes=0
+2026-04-24T12:44:17.384378Z  WARN ThreadId(13) backend::handler: Invalid entries found entries=["A->A"]
+2026-04-24T12:44:17.384396Z  INFO ThreadId(13) backend::handler: Response summary trees=0 cycles=0 largest=
+2026-04-24T12:44:17.384560Z  INFO ThreadId(13) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 230 bytes 1.920332ms
+2026-04-24T12:44:17.407442Z  INFO ThreadId(14) backend::handler: POST /bfhl received total_input=1
+2026-04-24T12:44:17.408206Z  INFO ThreadId(14) backend::handler: Parsing complete valid=0 invalid=1 dupes=0
+2026-04-24T12:44:17.408247Z  WARN ThreadId(14) backend::handler: Invalid entries found entries=["A->A"]
+2026-04-24T12:44:17.408273Z  INFO ThreadId(14) backend::handler: Response summary trees=0 cycles=0 largest=
+2026-04-24T12:44:17.408392Z  INFO ThreadId(14) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 230 bytes 1.129676ms
+2026-04-24T12:44:17.434143Z  INFO ThreadId(15) backend::handler: POST /bfhl received total_input=2
+2026-04-24T12:44:17.435035Z  INFO ThreadId(15) backend::handler: Parsing complete valid=2 invalid=0 dupes=0
+2026-04-24T12:44:17.435163Z  INFO ThreadId(15) backend::handler: Response summary trees=2 cycles=0 largest=A
+2026-04-24T12:44:17.435334Z  INFO ThreadId(15) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 314 bytes 1.460730ms
+2026-04-24T12:44:17.458759Z  INFO ThreadId(16) backend::handler: POST /bfhl received total_input=2
+2026-04-24T12:44:17.459823Z  INFO ThreadId(16) backend::handler: Parsing complete valid=2 invalid=0 dupes=0
+2026-04-24T12:44:17.460010Z  INFO ThreadId(16) backend::handler: Response summary trees=2 cycles=0 largest=A
+2026-04-24T12:44:17.460226Z  INFO ThreadId(16) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 314 bytes 1.653007ms
+2026-04-24T12:44:17.486659Z  INFO ThreadId(17) backend::handler: POST /bfhl received total_input=3
+2026-04-24T12:44:17.487686Z  INFO ThreadId(17) backend::handler: Parsing complete valid=1 invalid=0 dupes=1
+2026-04-24T12:44:17.487716Z  WARN ThreadId(17) backend::handler: Duplicate edges found edges=["A->B"]
+2026-04-24T12:44:17.487833Z  INFO ThreadId(17) backend::handler: Response summary trees=1 cycles=0 largest=A
+2026-04-24T12:44:17.488223Z  INFO ThreadId(17) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 275 bytes 1.807844ms
+2026-04-24T12:44:17.510960Z  INFO ThreadId(18) backend::handler: POST /bfhl received total_input=3
+2026-04-24T12:44:17.511641Z  INFO ThreadId(18) backend::handler: Parsing complete valid=1 invalid=0 dupes=1
+2026-04-24T12:44:17.511661Z  WARN ThreadId(18) backend::handler: Duplicate edges found edges=["A->B"]
+2026-04-24T12:44:17.511726Z  INFO ThreadId(18) backend::handler: Response summary trees=1 cycles=0 largest=A
+2026-04-24T12:44:17.511821Z  INFO ThreadId(18) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 275 bytes 1.063563ms
+2026-04-24T12:44:17.528970Z  INFO ThreadId(03) backend::handler: POST /bfhl received total_input=2
+2026-04-24T12:44:17.529559Z  INFO ThreadId(03) backend::handler: Parsing complete valid=2 invalid=0 dupes=0
+2026-04-24T12:44:17.529616Z  INFO ThreadId(03) backend::handler: Response summary trees=0 cycles=1 largest=
+2026-04-24T12:44:17.529702Z  INFO ThreadId(03) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 263 bytes 0.884010ms
+2026-04-24T12:44:17.546507Z  INFO ThreadId(04) backend::handler: POST /bfhl received total_input=2
+2026-04-24T12:44:17.547104Z  INFO ThreadId(04) backend::handler: Parsing complete valid=2 invalid=0 dupes=0
+2026-04-24T12:44:17.547163Z  INFO ThreadId(04) backend::handler: Response summary trees=0 cycles=1 largest=
+2026-04-24T12:44:17.547295Z  INFO ThreadId(04) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 263 bytes 0.946315ms
+2026-04-24T12:44:17.566583Z  INFO ThreadId(05) backend::handler: POST /bfhl received total_input=2
+2026-04-24T12:44:17.567528Z  INFO ThreadId(05) backend::handler: Parsing complete valid=2 invalid=0 dupes=0
+2026-04-24T12:44:17.567642Z  INFO ThreadId(05) backend::handler: Response summary trees=0 cycles=1 largest=
+2026-04-24T12:44:17.567733Z  INFO ThreadId(05) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 263 bytes 1.346088ms
+2026-04-24T12:44:17.582646Z  INFO ThreadId(06) backend::handler: POST /bfhl received total_input=3
+2026-04-24T12:44:17.583342Z  INFO ThreadId(06) backend::handler: Parsing complete valid=3 invalid=0 dupes=0
+2026-04-24T12:44:17.583408Z  INFO ThreadId(06) backend::handler: Response summary trees=0 cycles=1 largest=
+2026-04-24T12:44:17.583503Z  INFO ThreadId(06) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 263 bytes 1.012980ms
+2026-04-24T12:44:17.600086Z  INFO ThreadId(07) backend::handler: POST /bfhl received total_input=3
+2026-04-24T12:44:17.600746Z  INFO ThreadId(07) backend::handler: Parsing complete valid=3 invalid=0 dupes=0
+2026-04-24T12:44:17.600833Z  INFO ThreadId(07) backend::handler: Response summary trees=0 cycles=1 largest=
+2026-04-24T12:44:17.600946Z  INFO ThreadId(07) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 263 bytes 1.067210ms
+2026-04-24T12:44:17.616939Z  INFO ThreadId(08) backend::handler: POST /bfhl received total_input=3
+2026-04-24T12:44:17.617920Z  INFO ThreadId(08) backend::handler: Parsing complete valid=3 invalid=0 dupes=0
+2026-04-24T12:44:17.618098Z  INFO ThreadId(08) backend::handler: Response summary trees=1 cycles=0 largest=A
+2026-04-24T12:44:17.618222Z  INFO ThreadId(08) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 276 bytes 1.483082ms
+2026-04-24T12:44:17.636204Z  INFO ThreadId(09) backend::handler: POST /bfhl received total_input=3
+2026-04-24T12:44:17.636955Z  INFO ThreadId(09) backend::handler: Parsing complete valid=3 invalid=0 dupes=0
+2026-04-24T12:44:17.637046Z  INFO ThreadId(09) backend::handler: Response summary trees=1 cycles=0 largest=A
+2026-04-24T12:44:17.637137Z  INFO ThreadId(09) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 276 bytes 1.138453ms
+2026-04-24T12:44:17.654920Z  INFO ThreadId(10) backend::handler: POST /bfhl received total_input=4
+2026-04-24T12:44:17.655592Z  INFO ThreadId(10) backend::handler: Parsing complete valid=4 invalid=0 dupes=0
+2026-04-24T12:44:17.655690Z  INFO ThreadId(10) backend::handler: Response summary trees=1 cycles=0 largest=A
+2026-04-24T12:44:17.655779Z  INFO ThreadId(10) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 287 bytes 1.041863ms
+2026-04-24T12:44:17.672266Z  INFO ThreadId(11) backend::handler: POST /bfhl received total_input=2
+2026-04-24T12:44:17.673221Z  INFO ThreadId(11) backend::handler: Parsing complete valid=2 invalid=0 dupes=0
+2026-04-24T12:44:17.673354Z  INFO ThreadId(11) backend::handler: Response summary trees=2 cycles=0 largest=A
+2026-04-24T12:44:17.673451Z  INFO ThreadId(11) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 314 bytes 1.391802ms
+2026-04-24T12:44:17.691451Z  INFO ThreadId(12) backend::handler: POST /bfhl received total_input=4
+2026-04-24T12:44:17.692031Z  INFO ThreadId(12) backend::handler: Parsing complete valid=4 invalid=0 dupes=0
+2026-04-24T12:44:17.692151Z  INFO ThreadId(12) backend::handler: Response summary trees=4 cycles=0 largest=A
+2026-04-24T12:44:17.692264Z  INFO ThreadId(12) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 404 bytes 0.955513ms
+2026-04-24T12:44:17.708790Z  INFO ThreadId(13) backend::handler: POST /bfhl received total_input=0
+2026-04-24T12:44:17.709574Z  INFO ThreadId(13) backend::handler: Parsing complete valid=0 invalid=0 dupes=0
+2026-04-24T12:44:17.709595Z  INFO ThreadId(13) backend::handler: Response summary trees=0 cycles=0 largest=
+2026-04-24T12:44:17.709695Z  INFO ThreadId(13) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 224 bytes 1.105451ms
+2026-04-24T12:44:17.727416Z  INFO ThreadId(14) backend::handler: POST /bfhl received total_input=0
+2026-04-24T12:44:17.728108Z  INFO ThreadId(14) backend::handler: Parsing complete valid=0 invalid=0 dupes=0
+2026-04-24T12:44:17.728136Z  INFO ThreadId(14) backend::handler: Response summary trees=0 cycles=0 largest=
+2026-04-24T12:44:17.728438Z  INFO ThreadId(14) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 224 bytes 1.210145ms
+2026-04-24T12:44:17.747553Z  INFO ThreadId(15) backend::handler: POST /bfhl received total_input=4
+2026-04-24T12:44:17.748110Z  INFO ThreadId(15) backend::handler: Parsing complete valid=4 invalid=0 dupes=0
+2026-04-24T12:44:17.748213Z  INFO ThreadId(15) backend::handler: Response summary trees=1 cycles=1 largest=A
+2026-04-24T12:44:17.748302Z  INFO ThreadId(15) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 315 bytes 0.887116ms
+2026-04-24T12:44:17.764465Z  INFO ThreadId(16) backend::handler: POST /bfhl received total_input=4
+2026-04-24T12:44:17.765705Z  INFO ThreadId(16) backend::handler: Parsing complete valid=4 invalid=0 dupes=0
+2026-04-24T12:44:17.765884Z  INFO ThreadId(16) backend::handler: Response summary trees=1 cycles=1 largest=A
+2026-04-24T12:44:17.766004Z  INFO ThreadId(16) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 315 bytes 1.750347ms
+2026-04-24T12:44:17.782891Z  INFO ThreadId(17) backend::handler: POST /bfhl received total_input=4
+2026-04-24T12:44:17.783496Z  INFO ThreadId(17) backend::handler: Parsing complete valid=4 invalid=0 dupes=0
+2026-04-24T12:44:17.783598Z  INFO ThreadId(17) backend::handler: Response summary trees=1 cycles=1 largest=A
+2026-04-24T12:44:17.783699Z  INFO ThreadId(17) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 315 bytes 0.954361ms
+2026-04-24T12:44:17.801626Z  INFO ThreadId(18) backend::handler: POST /bfhl received total_input=7
+2026-04-24T12:44:17.802227Z  INFO ThreadId(18) backend::handler: Parsing complete valid=7 invalid=0 dupes=0
+2026-04-24T12:44:17.802348Z  INFO ThreadId(18) backend::handler: Response summary trees=1 cycles=0 largest=A
+2026-04-24T12:44:17.802441Z  INFO ThreadId(18) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 305 bytes 0.969830ms
+2026-04-24T12:44:17.819808Z  INFO ThreadId(03) backend::handler: POST /bfhl received total_input=5
+2026-04-24T12:44:17.820653Z  INFO ThreadId(03) backend::handler: Parsing complete valid=5 invalid=0 dupes=0
+2026-04-24T12:44:17.820811Z  INFO ThreadId(03) backend::handler: Response summary trees=1 cycles=0 largest=A
+2026-04-24T12:44:17.820939Z  INFO ThreadId(03) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 297 bytes 1.313517ms
+2026-04-24T12:44:17.837318Z  INFO ThreadId(04) backend::handler: POST /bfhl received total_input=5
+2026-04-24T12:44:17.838035Z  INFO ThreadId(04) backend::handler: Parsing complete valid=5 invalid=0 dupes=0
+2026-04-24T12:44:17.838144Z  INFO ThreadId(04) backend::handler: Response summary trees=1 cycles=0 largest=A
+2026-04-24T12:44:17.838254Z  INFO ThreadId(04) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 297 bytes 1.138673ms
+2026-04-24T12:44:17.856473Z  INFO ThreadId(05) backend::handler: POST /bfhl received total_input=3
+2026-04-24T12:44:17.857060Z  INFO ThreadId(05) backend::handler: Parsing complete valid=3 invalid=0 dupes=0
+2026-04-24T12:44:17.857160Z  INFO ThreadId(05) backend::handler: Response summary trees=1 cycles=0 largest=A
+2026-04-24T12:44:17.857269Z  INFO ThreadId(05) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 276 bytes 0.947839ms
+2026-04-24T12:44:17.880798Z  INFO ThreadId(06) backend::handler: POST /bfhl received total_input=4
+2026-04-24T12:44:17.881512Z  INFO ThreadId(06) backend::handler: Parsing complete valid=4 invalid=0 dupes=0
+2026-04-24T12:44:17.881610Z  INFO ThreadId(06) backend::handler: Response summary trees=1 cycles=1 largest=A
+2026-04-24T12:44:17.881704Z  INFO ThreadId(06) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 315 bytes 1.085824ms
+2026-04-24T12:44:17.902943Z  INFO ThreadId(07) backend::handler: POST /bfhl received total_input=7
+2026-04-24T12:44:17.903898Z  INFO ThreadId(07) backend::handler: Parsing complete valid=7 invalid=0 dupes=0
+2026-04-24T12:44:17.904041Z  INFO ThreadId(07) backend::handler: Response summary trees=1 cycles=0 largest=A
+2026-04-24T12:44:17.904151Z  INFO ThreadId(07) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 305 bytes 1.439591ms
+2026-04-24T12:44:17.926541Z  INFO ThreadId(08) backend::handler: POST /bfhl received total_input=2
+2026-04-24T12:44:17.927528Z  INFO ThreadId(08) backend::handler: Parsing complete valid=2 invalid=0 dupes=0
+2026-04-24T12:44:17.927718Z  INFO ThreadId(08) backend::handler: Response summary trees=2 cycles=0 largest=A
+2026-04-24T12:44:17.927830Z  INFO ThreadId(08) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 314 bytes 1.487149ms
+2026-04-24T12:44:17.949769Z  INFO ThreadId(09) backend::handler: POST /bfhl received total_input=8
+2026-04-24T12:44:17.950584Z  INFO ThreadId(09) backend::handler: Parsing complete valid=0 invalid=8 dupes=0
+2026-04-24T12:44:17.950610Z  WARN ThreadId(09) backend::handler: Invalid entries found entries=["hello", "1->2", "AB->C", "A-B", "A->", "", "A->A", "a->b"]
+2026-04-24T12:44:17.950628Z  INFO ThreadId(09) backend::handler: Response summary trees=0 cycles=0 largest=
+2026-04-24T12:44:17.950717Z  INFO ThreadId(09) actix_web::middleware::logger: 127.0.0.1 "POST /bfhl HTTP/1.1" 200 275 bytes 1.127001ms

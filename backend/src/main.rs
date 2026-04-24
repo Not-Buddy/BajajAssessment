@@ -42,7 +42,7 @@ async fn main() -> std::io::Result<()> {
         .init();
 
     // ── Server start ──────────────────────────────────────────────────────────
-    info!("Starting server on http://0.0.0.0:8080");
+    info!("Starting server on http://0.0.0.0:9000");
     info!("Logs are written to logs/bfhl.log.<date>");
 
     HttpServer::new(|| {
@@ -61,7 +61,7 @@ async fn main() -> std::io::Result<()> {
             ))
             .service(bfhl_handler)
     })
-    .bind("0.0.0.0:8080")?
+    .bind("0.0.0.0:9000")?
     .run()
     .await
 }

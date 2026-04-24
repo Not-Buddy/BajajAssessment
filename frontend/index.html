@@ -2,12 +2,113 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    <title>BFHL Visualizer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Our Styles -->
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <!-- Topbar: subtle glassmorphism header showing user info -->
+    <header class="topbar">
+      <div class="logo">BFHL <span>Visualizer</span></div>
+      <div id="userInfo" class="user-info">
+        <!-- Will be populated by JS -->
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Input Section -->
+      <section class="card glass-panel input-section">
+        <h1>Graph Hierarchy Processor</h1>
+        <p class="subtitle">Enter edges in <code>X->Y</code> format. Separate multiple edges with commas or spaces.</p>
+        
+        <form id="bfhlForm">
+          <div class="input-group">
+            <textarea 
+              id="edgeInput" 
+              placeholder="Example: A->B, A->C, B->D, C->E" 
+              rows="4" 
+              required
+            ></textarea>
+          </div>
+          
+          <button type="submit" id="submitBtn" class="btn-primary">
+            <span class="btn-text">Process Graph</span>
+            <div class="spinner" id="btnSpinner" style="display: none;"></div>
+          </button>
+        </form>
+        
+        <div id="errorBox" class="error-box" style="display: none;">
+          <svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          <span id="errorMessage">An error occurred.</span>
+        </div>
+      </section>
+
+      <!-- Results Section -->
+      <section id="resultsSection" class="results-section" style="display: none;">
+        
+        <!-- Summary Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card glass-panel">
+            <div class="stat-icon trees-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22v-6m-4-6v6m8-6v6m-4-6a4 4 0 110-8 4 4 0 010 8zm-8 6a4 4 0 110-8 4 4 0 010 8zm16 0a4 4 0 110-8 4 4 0 010 8z"></path></svg>
+            </div>
+            <div class="stat-info">
+              <h3>Total Trees</h3>
+              <p id="valTotalTrees" class="stat-val">0</p>
+            </div>
+          </div>
+          
+          <div class="stat-card glass-panel">
+            <div class="stat-icon cycles-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+            </div>
+            <div class="stat-info">
+              <h3>Total Cycles</h3>
+              <p id="valTotalCycles" class="stat-val">0</p>
+            </div>
+          </div>
+
+          <div class="stat-card glass-panel">
+            <div class="stat-icon root-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+            </div>
+            <div class="stat-info">
+              <h3>Largest Root</h3>
+              <p id="valLargestRoot" class="stat-val">-</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Issues: Invalid & Duplicates -->
+        <div id="issuesContainer" class="issues-container" style="display: none;">
+          <div id="invalidSection" class="issue-card invalid glass-panel" style="display: none;">
+            <h4>Invalid Entries</h4>
+            <div id="invalidTags" class="tag-group"></div>
+          </div>
+          
+          <div id="duplicateSection" class="issue-card duplicate glass-panel" style="display: none;">
+            <h4>Duplicate Edges</h4>
+            <div id="duplicateTags" class="tag-group"></div>
+          </div>
+        </div>
+
+        <!-- Hierarchies (Tree View) -->
+        <div class="hierarchies-container glass-panel">
+          <h2>Processed Hierarchies</h2>
+          <div id="treeView" class="tree-view">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

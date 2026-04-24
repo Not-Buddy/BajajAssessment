@@ -1,4 +1,4 @@
-use actix_web::{post, web, HttpResponse, Responder};
+use actix_web::{get, post, web, HttpResponse, Responder};
 use tracing::{info, warn};
 use crate::models::{BfhlRequest, BfhlResponse, Summary};
 use crate::parser::parse_entries;
@@ -8,6 +8,16 @@ use crate::graph::build_hierarchies;
 const USER_ID: &str = "aarykinge";
 const EMAIL_ID: &str = "ak8098@srmist.edu.in";
 const COLLEGE_ROLL_NUMBER: &str = "RA2311003020064";
+
+#[get("/")]
+pub async fn root_get_handler() -> impl Responder {
+    HttpResponse::Ok().body("RUST Bajaj endpoint")
+}
+
+#[get("/bfhl")]
+pub async fn bfhl_get_handler() -> impl Responder {
+    HttpResponse::Ok().body("RUST Bajaj endpoint")
+}
 
 #[post("/bfhl")]
 pub async fn bfhl_handler(body: web::Json<BfhlRequest>) -> impl Responder {

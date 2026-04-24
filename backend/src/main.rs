@@ -5,7 +5,7 @@ mod handler;
 
 use actix_web::{App, HttpServer, middleware};
 use actix_cors::Cors;
-use handler::bfhl_handler;
+use handler::{bfhl_handler, bfhl_get_handler, root_get_handler};
 use tracing::info;
 use tracing_appender::rolling;
 use tracing_subscriber::{fmt, layer::SubscriberExt, util::SubscriberInitExt, EnvFilter};
@@ -48,7 +48,6 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         let cors = Cors::default()
             .allowed_origin("https://bajaj-assessment-self.vercel.app")
-            .allowed_origin("http://localhost:5173")
             .allow_any_method()
             .allow_any_header()
             .max_age(3600);
@@ -59,6 +58,8 @@ async fn main() -> std::io::Result<()> {
             .wrap(middleware::Logger::new(
                 "%a \"%r\" %s %b bytes %Dms",
             ))
+            .service(root_get_handler)
+            .service(bfhl_get_handler)
             .service(bfhl_handler)
     })
     .bind("0.0.0.0:9000")?
